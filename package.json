@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "xcode": "open ./ios/detoxapp.xcworkspace",
-    "detox:ios": "concurrently --kill-others \"yarn start\" \"yarn detox test\""
+    "detox:ios": "concurrently -k --success first \"yarn detox test\" \"yarn start\""
   },
   "dependencies": {
     "react": "16.9.0",
