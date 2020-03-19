@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "xcode": "open ./ios/detoxapp.xcworkspace"
+    "xcode": "open ./ios/detoxapp.xcworkspace",
+    "detox:ios": "concurrently --kill-others \"yarn start\" \"yarn detox test\""
   },
   "dependencies": {
     "react": "16.9.0",
@@ -19,6 +20,7 @@
     "@babel/runtime": "^7.8.7",
     "@react-native-community/eslint-config": "^0.0.7",
     "babel-jest": "^25.1.0",
+    "concurrently": "^5.1.0",
     "detox": "^16.0.1",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
