@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "xcode": "open ./ios/detoxapp.xcworkspace"
   },
   "dependencies": {
     "react": "16.9.0",
